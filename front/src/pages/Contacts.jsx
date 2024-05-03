@@ -1,0 +1,29 @@
+
+const Contacts = () =>{
+    return <section>
+        <div className='px-4 mx-auto max-w-screen-md'>
+            <h2 className='heading text-center'>
+                Contact Us
+            </h2>
+            <p className='mb-8 lg:mb-16 font-light text-center text__para'>
+                Got a technical issue? Want to send us a feedback about a beta feature? Let us know!
+            </p>
+            <form action='#' className='space-y-8'>
+                <div>
+                    <label htmlFor='email' className='form__label'>Your email : </label>
+                    <input type="email" className='form__input mt-1' placeholder='example@gmail.com' id="email"/>
+                </div>
+                <div>
+                    <label htmlFor='subject' className='form__label'>Subject</label>
+                    <input type="text" className='form__input mt-1' placeholder='How can we help you' id="subject"/>
+                </div>
+                <div>
+                    <label htmlFor='message' className='form__label'>Message</label>
+                    <textarea type="text" rows='6' className='form__input mt-1' placeholder='Leave a message' id="message" />
+                </div>
+                <button type="submit" className='btn rounded sm:w-fit'>Submit</button>
+            </form>
+        </div>
+    </section>
+};
+export default Contacts;
